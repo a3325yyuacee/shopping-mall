@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Java相關
+*.class
+*.jar
+*.war
+
+# 操作系統相關
+.DS_Store
