@@ -1,5 +1,6 @@
 package com.bot.shopping_mall.dao.impl;
 
+import com.bot.shopping_mall.constant.ProductCategory;
 import com.bot.shopping_mall.dao.ProductDao;
 import com.bot.shopping_mall.dto.ProductRequest;
 import com.bot.shopping_mall.model.Product;
@@ -23,11 +24,25 @@ public class ProductDaoImpl implements ProductDao {
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Override
-    public List<Product> getProducts() {
+    public List<Product> getProducts(ProductCategory category, String search) {
 
-        String sql = "SELECT * FROM product";
+        //可以讓下面的ＳＱＬ條件直接拼在後面，例如category如果是null，不會有報錯問題
+        String sql = "SELECT * FROM product WHERE 1=1";
 
         Map<String, Object> map = new HashMap<>();
+
+        if(category != null){
+            sql = sql + " AND category = :category";
+
+            //因為category是屬於Enum類型，要使用.name()去將Enum類型轉換成字串再將字串的值放到map中
+            map.put("category", category.name());
+        }
+
+        if (search != null){
+            sql = sql +" AND product_name LIKE :search";
+
+            map.put("search", "%" + search + "%");
+        }
 
         List<Product> productList = namedParameterJdbcTemplate.query(sql, map, new ProductRowMapper());
 

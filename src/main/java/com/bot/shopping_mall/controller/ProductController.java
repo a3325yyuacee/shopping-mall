@@ -1,5 +1,6 @@
 package com.bot.shopping_mall.controller;
 
+import com.bot.shopping_mall.constant.ProductCategory;
 import com.bot.shopping_mall.dto.ProductRequest;
 import com.bot.shopping_mall.model.Product;
 import com.bot.shopping_mall.service.ProductService;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static jdk.jpackage.internal.MacDmgBundler.required;
+
 @RestController
 public class ProductController {
 
@@ -19,9 +22,12 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping("/products")
-    public ResponseEntity<List<Product>> getProducts(){
+    public ResponseEntity<List<Product>> getProducts(
+            @RequestParam(required = false) ProductCategory category,
+            @RequestParam(required = false) String search
+    ){
 
-        List<Product> productList =  productService.getProducts();
+        List<Product> productList =  productService.getProducts(category, search);
 
         return  ResponseEntity.status(HttpStatus.OK).body(productList);
     }
