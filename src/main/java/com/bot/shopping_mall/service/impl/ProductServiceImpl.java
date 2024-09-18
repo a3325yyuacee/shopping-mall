@@ -1,7 +1,7 @@
 package com.bot.shopping_mall.service.impl;
 
-import com.bot.shopping_mall.constant.ProductCategory;
 import com.bot.shopping_mall.dao.ProductDao;
+import com.bot.shopping_mall.dto.ProductQueryParams;
 import com.bot.shopping_mall.dto.ProductRequest;
 import com.bot.shopping_mall.model.Product;
 import com.bot.shopping_mall.service.ProductService;
@@ -17,8 +17,8 @@ public class ProductServiceImpl implements ProductService {
     private ProductDao productDao;
 
     @Override
-    public List<Product> getProducts(ProductCategory category, String search) {
-        return productDao.getProducts(category, search);
+    public List<Product> getProducts(ProductQueryParams productQueryParams) {
+        return productDao.getProducts(productQueryParams);
     }
 
     @Override
