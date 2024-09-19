@@ -7,10 +7,11 @@ import com.bot.shopping_mall.model.Product;
 import com.bot.shopping_mall.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Component
+@Service
 public class ProductServiceImpl implements ProductService {
 
     @Autowired

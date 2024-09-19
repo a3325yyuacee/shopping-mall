@@ -3,9 +3,11 @@ package com.bot.shopping_mall.dao;
 import com.bot.shopping_mall.dto.ProductQueryParams;
 import com.bot.shopping_mall.dto.ProductRequest;
 import com.bot.shopping_mall.model.Product;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public interface ProductDao {
 
     List<Product> getProducts(ProductQueryParams productQueryParams);

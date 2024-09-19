@@ -5,6 +5,7 @@ import com.bot.shopping_mall.dto.ProductQueryParams;
 import com.bot.shopping_mall.dto.ProductRequest;
 import com.bot.shopping_mall.model.Product;
 import com.bot.shopping_mall.service.ProductService;
+import jakarta.annotation.PostConstruct;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,18 +18,32 @@ import java.util.List;
 @RestController
 public class ProductController {
 
+    @PostConstruct
+    public void init() {
+        System.out.println("ProductController is initialized");
+    }
+
     @Autowired
     private ProductService productService;
 
     @GetMapping("/products")
     public ResponseEntity<List<Product>> getProducts(
+            //查詢條件 Filtering
             @RequestParam(required = false) ProductCategory category,
-            @RequestParam(required = false) String search
+            @RequestParam(required = false) String search,
+
+            //排序 Sorting
+            @RequestParam(defaultValue = "created_date") String orderBy,
+            @RequestParam(defaultValue = "desc") String sort
     ){
+        System.out.println("API /products 被調用");
+
 
         ProductQueryParams productQueryParams = new ProductQueryParams();
         productQueryParams.setCategory(category);
         productQueryParams.setSearch(search);
+        productQueryParams.setOrderBy(orderBy);
+        productQueryParams.setSort(sort);
 
         List<Product> productList =  productService.getProducts(productQueryParams);
 
@@ -45,6 +60,7 @@ public class ProductController {
         }else {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
+
     }
 
     @PostMapping("/products")

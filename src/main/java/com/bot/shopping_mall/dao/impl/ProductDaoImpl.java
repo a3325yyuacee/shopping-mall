@@ -12,6 +12,7 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Component;
 
+
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -20,14 +21,19 @@ import java.util.Map;
 @Component
 public class ProductDaoImpl implements ProductDao {
 
+
     @Autowired
     private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Override
     public List<Product> getProducts(ProductQueryParams productQueryParams) {
+        System.out.println("getProducts 方法被調用");
+
 
         //可以讓下面的ＳＱＬ條件直接拼在後面，例如category如果是null，不會有報錯問題
-        String sql = "SELECT * FROM product WHERE 1=1";
+        String sql = "SELECT product_id, product_name, category, image_url, price, stock, " +
+                "description, created_date, last_modified_date " +
+                "FROM product WHERE 1=1";
 
         Map<String, Object> map = new HashMap<>();
 
@@ -43,6 +49,11 @@ public class ProductDaoImpl implements ProductDao {
 
             map.put("search", "%" + productQueryParams.getSearch() + "%");
         }
+        // 打印出 SQL 和參數
+        System.out.println("Generated SQL: " + sql);
+        System.out.println("Parameters: " + map);
+
+        sql = sql + " ORDER BY " + productQueryParams.getOrderBy() + " " + productQueryParams.getSort();
 
         List<Product> productList = namedParameterJdbcTemplate.query(sql, map, new ProductRowMapper());
 
@@ -51,6 +62,8 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product getProductById(Integer productId) {
+        System.out.println("getProductByID 方法被調用");
+
         String sql = "select product_id, product_name, category, image_url, price, stock, " +
                 "description, created_date, last_modified_date " +
                 "from product where product_id = :productId; ";
