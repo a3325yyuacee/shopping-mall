@@ -27,8 +27,6 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public List<Product> getProducts(ProductQueryParams productQueryParams) {
-        System.out.println("getProducts 方法被調用");
-
 
         //可以讓下面的ＳＱＬ條件直接拼在後面，例如category如果是null，不會有報錯問題
         String sql = "SELECT product_id, product_name, category, image_url, price, stock, " +
@@ -37,6 +35,7 @@ public class ProductDaoImpl implements ProductDao {
 
         Map<String, Object> map = new HashMap<>();
 
+        //查詢條件
         if(productQueryParams.getCategory() != null){
             sql = sql + " AND category = :category";
 
@@ -49,12 +48,17 @@ public class ProductDaoImpl implements ProductDao {
 
             map.put("search", "%" + productQueryParams.getSearch() + "%");
         }
-        // 打印出 SQL 和參數
-        System.out.println("Generated SQL: " + sql);
-        System.out.println("Parameters: " + map);
 
+        //排序
         sql = sql + " ORDER BY " + productQueryParams.getOrderBy() + " " + productQueryParams.getSort();
 
+        //分頁
+        sql = sql + " LIMIT :limit OFFSET :offset";
+        map.put("limit", productQueryParams.getLimit());
+        map.put("offset", productQueryParams.getOffset());
+
+        // 打印出 SQL 和參數
+        System.out.println("Generated SQL: " + sql);
         List<Product> productList = namedParameterJdbcTemplate.query(sql, map, new ProductRowMapper());
 
         return productList;
@@ -62,7 +66,6 @@ public class ProductDaoImpl implements ProductDao {
 
     @Override
     public Product getProductById(Integer productId) {
-        System.out.println("getProductByID 方法被調用");
 
         String sql = "select product_id, product_name, category, image_url, price, stock, " +
                 "description, created_date, last_modified_date " +
