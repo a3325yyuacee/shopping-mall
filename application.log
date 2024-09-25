@@ -1,367 +1,136 @@
-2024-09-24T19:20:37.006+08:00  INFO 45040 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Starting ShoppingMallApplication using Java 20.0.1 with PID 45040 (/Users/bo/Desktop/shopping-mall/target/classes started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:20:37.011+08:00  INFO 45040 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:20:37.471+08:00  INFO 45040 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:20:37.483+08:00  INFO 45040 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:20:37.850+08:00  INFO 45040 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-24T19:20:37.863+08:00  INFO 45040 --- [shopping-mall] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-24T19:20:37.863+08:00  INFO 45040 --- [shopping-mall] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-24T19:20:37.896+08:00  INFO 45040 --- [shopping-mall] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-24T19:20:37.896+08:00  INFO 45040 --- [shopping-mall] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 845 ms
-2024-09-24T19:20:37.987+08:00  INFO 45040 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:20:38.017+08:00  INFO 45040 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-09-24T19:20:38.037+08:00  INFO 45040 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:20:38.277+08:00  INFO 45040 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:20:38.292+08:00  INFO 45040 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-24T19:20:38.586+08:00  INFO 45040 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e2bd5e6
-2024-09-24T19:20:38.587+08:00  INFO 45040 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-24T19:20:38.823+08:00  INFO 45040 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:20:38.827+08:00  INFO 45040 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:20:38.934+08:00  WARN 45040 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:20:39.155+08:00  INFO 45040 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-24T19:20:39.161+08:00  INFO 45040 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Started ShoppingMallApplication in 2.556 seconds (process running for 2.995)
-2024-09-24T19:23:19.998+08:00  INFO 45081 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Starting ShoppingMallApplicationTests using Java 20.0.1 with PID 45081 (started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:23:20.000+08:00  INFO 45081 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:23:20.402+08:00  INFO 45081 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:23:20.417+08:00  INFO 45081 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:23:20.615+08:00  INFO 45081 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-24T19:23:20.896+08:00  INFO 45081 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1283ca23
-2024-09-24T19:23:20.897+08:00  INFO 45081 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-24T19:23:20.942+08:00  INFO 45081 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:23:20.973+08:00  INFO 45081 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-09-24T19:23:20.990+08:00  INFO 45081 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:23:21.156+08:00  INFO 45081 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:23:21.403+08:00  INFO 45081 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:23:21.406+08:00  INFO 45081 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:23:21.537+08:00  WARN 45081 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:23:21.756+08:00  INFO 45081 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Started ShoppingMallApplicationTests in 1.892 seconds (process running for 2.427)
-2024-09-24T19:23:22.256+08:00  INFO 45081 --- [shopping-mall] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bot.shopping_mall.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-09-24T19:23:22.268+08:00  INFO 45081 --- [shopping-mall] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bot.shopping_mall.ShoppingMallApplication for test class com.bot.shopping_mall.controller.ProductControllerTest
-2024-09-24T19:23:22.290+08:00  INFO 45081 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Starting ProductControllerTest using Java 20.0.1 with PID 45081 (started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:23:22.290+08:00  INFO 45081 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:23:22.372+08:00  INFO 45081 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:23:22.375+08:00  INFO 45081 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:23:22.409+08:00  INFO 45081 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-09-24T19:23:22.423+08:00  INFO 45081 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fc8163
-2024-09-24T19:23:22.423+08:00  INFO 45081 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-09-24T19:23:22.439+08:00  INFO 45081 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:23:22.440+08:00  INFO 45081 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:23:22.445+08:00  INFO 45081 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:23:22.458+08:00  INFO 45081 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:23:22.459+08:00  INFO 45081 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:23:22.491+08:00  WARN 45081 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:23:22.594+08:00  INFO 45081 --- [shopping-mall] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-09-24T19:23:22.594+08:00  INFO 45081 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-09-24T19:23:22.595+08:00  INFO 45081 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2024-09-24T19:23:22.600+08:00  INFO 45081 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Started ProductControllerTest in 0.33 seconds (process running for 3.272)
-2024-09-24T19:23:22.726+08:00  WARN 45081 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.createProduct(com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] ]
-2024-09-24T19:23:22.941+08:00  WARN 45081 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.updateProduct(java.lang.Integer,com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] ]
-2024-09-24T19:23:22.962+08:00  INFO 45081 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:23:22.963+08:00  INFO 45081 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-24T19:23:22.967+08:00  INFO 45081 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-24T19:23:22.968+08:00  INFO 45081 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:23:22.969+08:00  INFO 45081 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-09-24T19:23:22.970+08:00  INFO 45081 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-09-24T19:23:29.402+08:00  INFO 45040 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:23:29.406+08:00  INFO 45040 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-24T19:23:29.417+08:00  INFO 45040 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-24T19:23:32.154+08:00  INFO 45101 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Starting ShoppingMallApplication using Java 20.0.1 with PID 45101 (/Users/bo/Desktop/shopping-mall/target/classes started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:23:32.155+08:00  INFO 45101 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:23:32.514+08:00  INFO 45101 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:23:32.526+08:00  INFO 45101 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:23:32.994+08:00  INFO 45101 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-24T19:23:33.002+08:00  INFO 45101 --- [shopping-mall] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-24T19:23:33.003+08:00  INFO 45101 --- [shopping-mall] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-24T19:23:33.030+08:00  INFO 45101 --- [shopping-mall] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-24T19:23:33.030+08:00  INFO 45101 --- [shopping-mall] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 841 ms
-2024-09-24T19:23:33.105+08:00  INFO 45101 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:23:33.124+08:00  INFO 45101 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-09-24T19:23:33.137+08:00  INFO 45101 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:23:33.273+08:00  INFO 45101 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:23:33.284+08:00  INFO 45101 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-24T19:23:33.462+08:00  INFO 45101 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@9f9146d
-2024-09-24T19:23:33.463+08:00  INFO 45101 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-24T19:23:33.652+08:00  INFO 45101 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:23:33.654+08:00  INFO 45101 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:23:33.713+08:00  WARN 45101 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:23:33.902+08:00  INFO 45101 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-24T19:23:33.909+08:00  INFO 45101 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Started ShoppingMallApplication in 2.171 seconds (process running for 2.585)
-2024-09-24T19:28:17.209+08:00  INFO 45101 --- [shopping-mall] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-24T19:28:17.211+08:00  INFO 45101 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-24T19:28:17.214+08:00  INFO 45101 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2024-09-24T19:28:17.478+08:00 ERROR 45101 --- [shopping-mall] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT user_id, email, password, created_date, last_modified_dateFROM user WHERE user_id = ?]] with root cause
-
-java.sql.SQLSyntaxErrorException: Unknown column 'user_id' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:732) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:723) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:804) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:218) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:225) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at com.bot.shopping_mall.dao.impl.UserDaoImpl.getUserById(UserDaoImpl.java:33) ~[classes/:na]
-	at com.bot.shopping_mall.service.impl.UserServiceImpl.getUserById(UserServiceImpl.java:18) ~[classes/:na]
-	at com.bot.shopping_mall.controller.UserController.register(UserController.java:27) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
-
-2024-09-24T19:30:13.963+08:00 ERROR 45101 --- [shopping-mall] [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [INSERT INTO user(email, password, created_date, last_modified_date)Value (?, ?, ?, ?)]; Duplicate entry 'test@gmail.com' for key 'user.email'] with root cause
-
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'test@gmail.com' for key 'user.email'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$3(JdbcTemplate.java:1002) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1001) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:365) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.update(NamedParameterJdbcTemplate.java:349) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at com.bot.shopping_mall.dao.impl.UserDaoImpl.createUser(UserDaoImpl.java:57) ~[classes/:na]
-	at com.bot.shopping_mall.service.impl.UserServiceImpl.register(UserServiceImpl.java:24) ~[classes/:na]
-	at com.bot.shopping_mall.controller.UserController.register(UserController.java:25) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
-
-2024-09-24T19:30:49.649+08:00 ERROR 45101 --- [shopping-mall] [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT user_id, email, password, created_date, last_modified_dateFROM user WHERE user_id = ?]] with root cause
-
-java.sql.SQLSyntaxErrorException: Unknown column 'user_id' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:972) ~[mysql-connector-j-8.0.33.jar:8.0.33]
-	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52) ~[HikariCP-5.1.0.jar:na]
-	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java) ~[HikariCP-5.1.0.jar:na]
-	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:732) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:658) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:723) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:748) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:804) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:218) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:225) ~[spring-jdbc-6.1.12.jar:6.1.12]
-	at com.bot.shopping_mall.dao.impl.UserDaoImpl.getUserById(UserDaoImpl.java:33) ~[classes/:na]
-	at com.bot.shopping_mall.service.impl.UserServiceImpl.getUserById(UserServiceImpl.java:18) ~[classes/:na]
-	at com.bot.shopping_mall.controller.UserController.register(UserController.java:27) ~[classes/:na]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.12.jar:6.1.12]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.28.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.12.jar:6.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.28.jar:10.1.28]
-	at java.base/java.lang.Thread.run(Thread.java:1623) ~[na:na]
-
-2024-09-24T19:35:48.900+08:00  INFO 47068 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Starting ShoppingMallApplicationTests using Java 20.0.1 with PID 47068 (started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:35:48.901+08:00  INFO 47068 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:35:49.319+08:00  INFO 47068 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:35:49.330+08:00  INFO 47068 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:35:49.491+08:00  INFO 47068 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-24T19:35:49.763+08:00  INFO 47068 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c1f8dbd
-2024-09-24T19:35:49.764+08:00  INFO 47068 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-24T19:35:49.807+08:00  INFO 47068 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:35:49.838+08:00  INFO 47068 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-09-24T19:35:49.854+08:00  INFO 47068 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:35:49.992+08:00  INFO 47068 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:35:50.368+08:00  INFO 47068 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:35:50.371+08:00  INFO 47068 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:35:50.479+08:00  WARN 47068 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:35:50.657+08:00  INFO 47068 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Started ShoppingMallApplicationTests in 1.989 seconds (process running for 2.602)
-2024-09-24T19:35:51.024+08:00  INFO 47068 --- [shopping-mall] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bot.shopping_mall.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2024-09-24T19:35:51.035+08:00  INFO 47068 --- [shopping-mall] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bot.shopping_mall.ShoppingMallApplication for test class com.bot.shopping_mall.controller.ProductControllerTest
-2024-09-24T19:35:51.046+08:00  INFO 47068 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Starting ProductControllerTest using Java 20.0.1 with PID 47068 (started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:35:51.046+08:00  INFO 47068 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:35:51.116+08:00  INFO 47068 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:35:51.119+08:00  INFO 47068 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:35:51.161+08:00  INFO 47068 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
-2024-09-24T19:35:51.174+08:00  INFO 47068 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@46146832
-2024-09-24T19:35:51.177+08:00  INFO 47068 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
-2024-09-24T19:35:51.186+08:00  INFO 47068 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:35:51.187+08:00  INFO 47068 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:35:51.190+08:00  INFO 47068 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:35:51.199+08:00  INFO 47068 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:35:51.199+08:00  INFO 47068 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:35:51.225+08:00  WARN 47068 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:35:51.275+08:00  INFO 47068 --- [shopping-mall] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
-2024-09-24T19:35:51.275+08:00  INFO 47068 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
-2024-09-24T19:35:51.276+08:00  INFO 47068 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
-2024-09-24T19:35:51.279+08:00  INFO 47068 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Started ProductControllerTest in 0.242 seconds (process running for 3.225)
-2024-09-24T19:35:51.398+08:00  WARN 47068 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.createProduct(com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] ]
-2024-09-24T19:35:51.570+08:00  WARN 47068 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.updateProduct(java.lang.Integer,com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] ]
-2024-09-24T19:35:51.589+08:00  INFO 47068 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:35:51.590+08:00  INFO 47068 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-24T19:35:51.593+08:00  INFO 47068 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-24T19:35:51.594+08:00  INFO 47068 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:35:51.595+08:00  INFO 47068 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
-2024-09-24T19:35:51.602+08:00  INFO 47068 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
-2024-09-24T19:35:56.907+08:00  INFO 45101 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:35:56.923+08:00  INFO 45101 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-24T19:35:56.935+08:00  INFO 45101 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2024-09-24T19:35:58.278+08:00  INFO 47085 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Starting ShoppingMallApplication using Java 20.0.1 with PID 47085 (/Users/bo/Desktop/shopping-mall/target/classes started by bo in /Users/bo/Desktop/shopping-mall)
-2024-09-24T19:35:58.280+08:00  INFO 47085 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : No active profile set, falling back to 1 default profile: "default"
-2024-09-24T19:35:58.625+08:00  INFO 47085 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-09-24T19:35:58.635+08:00  INFO 47085 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
-2024-09-24T19:35:58.866+08:00  INFO 47085 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-09-24T19:35:58.873+08:00  INFO 47085 --- [shopping-mall] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-09-24T19:35:58.873+08:00  INFO 47085 --- [shopping-mall] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
-2024-09-24T19:35:58.896+08:00  INFO 47085 --- [shopping-mall] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-09-24T19:35:58.896+08:00  INFO 47085 --- [shopping-mall] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 581 ms
-2024-09-24T19:35:58.992+08:00  INFO 47085 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-09-24T19:35:59.016+08:00  INFO 47085 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-09-24T19:35:59.028+08:00  INFO 47085 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-09-24T19:35:59.159+08:00  INFO 47085 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-09-24T19:35:59.170+08:00  INFO 47085 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-09-24T19:35:59.339+08:00  INFO 47085 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a9a8ec3
-2024-09-24T19:35:59.340+08:00  INFO 47085 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-09-24T19:35:59.517+08:00  INFO 47085 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-09-24T19:35:59.519+08:00  INFO 47085 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:35:59.579+08:00  WARN 47085 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-09-24T19:35:59.780+08:00  INFO 47085 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-09-24T19:35:59.785+08:00  INFO 47085 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Started ShoppingMallApplication in 1.747 seconds (process running for 1.956)
-2024-09-24T19:36:11.903+08:00  INFO 47085 --- [shopping-mall] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-09-24T19:36:11.906+08:00  INFO 47085 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-09-24T19:36:11.911+08:00  INFO 47085 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
-2024-09-24T19:37:00.189+08:00  INFO 47085 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-09-24T19:37:00.194+08:00  INFO 47085 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-09-24T19:37:00.203+08:00  INFO 47085 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T20:26:05.098+08:00  INFO 57102 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Starting ShoppingMallApplicationTests using Java 20.0.1 with PID 57102 (started by bo in /Users/bo/Desktop/shopping-mall)
+2024-09-25T20:26:05.104+08:00  INFO 57102 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:26:05.532+08:00  INFO 57102 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:26:05.547+08:00  INFO 57102 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2024-09-25T20:26:05.754+08:00  INFO 57102 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T20:26:06.071+08:00  INFO 57102 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4ea56bdb
+2024-09-25T20:26:06.072+08:00  INFO 57102 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T20:26:06.120+08:00  INFO 57102 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:26:06.153+08:00  INFO 57102 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T20:26:06.174+08:00  INFO 57102 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:26:06.340+08:00  INFO 57102 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:26:06.581+08:00  INFO 57102 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:26:06.584+08:00  INFO 57102 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:26:06.714+08:00  WARN 57102 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:26:06.938+08:00  INFO 57102 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Started ShoppingMallApplicationTests in 2.079 seconds (process running for 2.908)
+2024-09-25T20:26:07.353+08:00  INFO 57102 --- [shopping-mall] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bot.shopping_mall.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-25T20:26:07.362+08:00  INFO 57102 --- [shopping-mall] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bot.shopping_mall.ShoppingMallApplication for test class com.bot.shopping_mall.controller.ProductControllerTest
+2024-09-25T20:26:07.384+08:00  INFO 57102 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Starting ProductControllerTest using Java 20.0.1 with PID 57102 (started by bo in /Users/bo/Desktop/shopping-mall)
+2024-09-25T20:26:07.384+08:00  INFO 57102 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:26:07.492+08:00  INFO 57102 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:26:07.495+08:00  INFO 57102 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2024-09-25T20:26:07.541+08:00  INFO 57102 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-25T20:26:07.553+08:00  INFO 57102 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1d45c4b7
+2024-09-25T20:26:07.554+08:00  INFO 57102 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-25T20:26:07.561+08:00  INFO 57102 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:26:07.562+08:00  INFO 57102 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:26:07.565+08:00  INFO 57102 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:26:07.575+08:00  INFO 57102 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:26:07.575+08:00  INFO 57102 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:26:07.602+08:00  WARN 57102 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:26:07.727+08:00  INFO 57102 --- [shopping-mall] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-25T20:26:07.728+08:00  INFO 57102 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-25T20:26:07.729+08:00  INFO 57102 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-25T20:26:07.735+08:00  INFO 57102 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Started ProductControllerTest in 0.369 seconds (process running for 3.705)
+2024-09-25T20:26:07.883+08:00  WARN 57102 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.createProduct(com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] ]
+2024-09-25T20:26:08.151+08:00  WARN 57102 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.updateProduct(java.lang.Integer,com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] ]
+2024-09-25T20:26:08.224+08:00  INFO 57102 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:26:08.226+08:00  INFO 57102 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T20:26:08.231+08:00  INFO 57102 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T20:26:08.232+08:00  INFO 57102 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:26:08.232+08:00  INFO 57102 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-25T20:26:08.234+08:00  INFO 57102 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-25T20:26:26.952+08:00  INFO 57128 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Starting ShoppingMallApplication using Java 20.0.1 with PID 57128 (/Users/bo/Desktop/shopping-mall/target/classes started by bo in /Users/bo/Desktop/shopping-mall)
+2024-09-25T20:26:26.953+08:00  INFO 57128 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:26:27.356+08:00  INFO 57128 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:26:27.370+08:00  INFO 57128 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-09-25T20:26:27.650+08:00  INFO 57128 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T20:26:27.666+08:00  INFO 57128 --- [shopping-mall] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T20:26:27.666+08:00  INFO 57128 --- [shopping-mall] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T20:26:27.703+08:00  INFO 57128 --- [shopping-mall] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T20:26:27.703+08:00  INFO 57128 --- [shopping-mall] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 726 ms
+2024-09-25T20:26:27.789+08:00  INFO 57128 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:26:27.821+08:00  INFO 57128 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T20:26:27.838+08:00  INFO 57128 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:26:28.011+08:00  INFO 57128 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:26:28.024+08:00  INFO 57128 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T20:26:28.299+08:00  INFO 57128 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@141aba65
+2024-09-25T20:26:28.300+08:00  INFO 57128 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T20:26:28.525+08:00  INFO 57128 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:26:28.527+08:00  INFO 57128 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:26:28.593+08:00  WARN 57128 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:26:28.800+08:00  INFO 57128 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T20:26:28.810+08:00  INFO 57128 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Started ShoppingMallApplication in 2.143 seconds (process running for 2.523)
+2024-09-25T20:26:35.635+08:00  INFO 57128 --- [shopping-mall] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T20:26:35.636+08:00  INFO 57128 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T20:26:35.638+08:00  INFO 57128 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-25T20:26:35.786+08:00  WARN 57128 --- [shopping-mall] [http-nio-8080-exec-2] c.b.s.service.impl.UserServiceImpl       : 該 email test3@gmail.com 已經被註冊
+2024-09-25T20:32:04.507+08:00  INFO 57256 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Starting ShoppingMallApplicationTests using Java 20.0.1 with PID 57256 (started by bo in /Users/bo/Desktop/shopping-mall)
+2024-09-25T20:32:04.508+08:00  INFO 57256 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:32:04.883+08:00  INFO 57256 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:32:04.895+08:00  INFO 57256 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2024-09-25T20:32:05.079+08:00  INFO 57256 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T20:32:05.371+08:00  INFO 57256 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32227215
+2024-09-25T20:32:05.372+08:00  INFO 57256 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T20:32:05.414+08:00  INFO 57256 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:32:05.442+08:00  INFO 57256 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T20:32:05.459+08:00  INFO 57256 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:32:05.613+08:00  INFO 57256 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:32:05.851+08:00  INFO 57256 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:32:05.855+08:00  INFO 57256 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:32:05.978+08:00  WARN 57256 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:32:06.215+08:00  INFO 57256 --- [shopping-mall] [main] c.b.s.ShoppingMallApplicationTests       : Started ShoppingMallApplicationTests in 1.855 seconds (process running for 2.438)
+2024-09-25T20:32:06.714+08:00  INFO 57256 --- [shopping-mall] [main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.bot.shopping_mall.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-09-25T20:32:06.727+08:00  INFO 57256 --- [shopping-mall] [main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.bot.shopping_mall.ShoppingMallApplication for test class com.bot.shopping_mall.controller.ProductControllerTest
+2024-09-25T20:32:06.748+08:00  INFO 57256 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Starting ProductControllerTest using Java 20.0.1 with PID 57256 (started by bo in /Users/bo/Desktop/shopping-mall)
+2024-09-25T20:32:06.749+08:00  INFO 57256 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:32:06.818+08:00  INFO 57256 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:32:06.821+08:00  INFO 57256 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2024-09-25T20:32:06.867+08:00  INFO 57256 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-09-25T20:32:06.881+08:00  INFO 57256 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2396408a
+2024-09-25T20:32:06.881+08:00  INFO 57256 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-09-25T20:32:06.889+08:00  INFO 57256 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:32:06.890+08:00  INFO 57256 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:32:06.896+08:00  INFO 57256 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:32:06.911+08:00  INFO 57256 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:32:06.911+08:00  INFO 57256 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:32:06.940+08:00  WARN 57256 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:32:07.011+08:00  INFO 57256 --- [shopping-mall] [main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-09-25T20:32:07.011+08:00  INFO 57256 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-09-25T20:32:07.012+08:00  INFO 57256 --- [shopping-mall] [main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-09-25T20:32:07.017+08:00  INFO 57256 --- [shopping-mall] [main] c.b.s.controller.ProductControllerTest   : Started ProductControllerTest in 0.285 seconds (process running for 3.239)
+2024-09-25T20:32:07.175+08:00  WARN 57256 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.createProduct(com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] ]
+2024-09-25T20:32:07.393+08:00  WARN 57256 --- [shopping-mall] [main] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.bot.shopping_mall.model.Product> com.bot.shopping_mall.controller.ProductController.updateProduct(java.lang.Integer,com.bot.shopping_mall.dto.ProductRequest) with 4 errors: [Field error in object 'productRequest' on field 'price': rejected value [null]; codes [NotNull.productRequest.price,NotNull.price,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.price,price]; arguments []; default message [price]]; default message [must not be null]] [Field error in object 'productRequest' on field 'stock': rejected value [null]; codes [NotNull.productRequest.stock,NotNull.stock,NotNull.java.lang.Integer,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.stock,stock]; arguments []; default message [stock]]; default message [must not be null]] [Field error in object 'productRequest' on field 'imageUrl': rejected value [null]; codes [NotNull.productRequest.imageUrl,NotNull.imageUrl,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.imageUrl,imageUrl]; arguments []; default message [imageUrl]]; default message [must not be null]] [Field error in object 'productRequest' on field 'category': rejected value [null]; codes [NotNull.productRequest.category,NotNull.category,NotNull.com.bot.shopping_mall.constant.ProductCategory,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productRequest.category,category]; arguments []; default message [category]]; default message [must not be null]] ]
+2024-09-25T20:32:07.419+08:00  INFO 57256 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:32:07.420+08:00  INFO 57256 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T20:32:07.424+08:00  INFO 57256 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T20:32:07.426+08:00  INFO 57256 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:32:07.426+08:00  INFO 57256 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2024-09-25T20:32:07.427+08:00  INFO 57256 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2024-09-25T20:32:09.801+08:00  INFO 57128 --- [shopping-mall] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:32:09.815+08:00  INFO 57128 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-25T20:32:09.828+08:00  INFO 57128 --- [shopping-mall] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-25T20:32:11.475+08:00  INFO 57274 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Starting ShoppingMallApplication using Java 20.0.1 with PID 57274 (/Users/bo/Desktop/shopping-mall/target/classes started by bo in /Users/bo/Desktop/shopping-mall)
+2024-09-25T20:32:11.476+08:00  INFO 57274 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : No active profile set, falling back to 1 default profile: "default"
+2024-09-25T20:32:11.937+08:00  INFO 57274 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-25T20:32:11.949+08:00  INFO 57274 --- [shopping-mall] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2024-09-25T20:32:12.240+08:00  INFO 57274 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-25T20:32:12.248+08:00  INFO 57274 --- [shopping-mall] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-25T20:32:12.248+08:00  INFO 57274 --- [shopping-mall] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2024-09-25T20:32:12.278+08:00  INFO 57274 --- [shopping-mall] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-25T20:32:12.278+08:00  INFO 57274 --- [shopping-mall] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 775 ms
+2024-09-25T20:32:12.349+08:00  INFO 57274 --- [shopping-mall] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-25T20:32:12.374+08:00  INFO 57274 --- [shopping-mall] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-09-25T20:32:12.389+08:00  INFO 57274 --- [shopping-mall] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-25T20:32:12.549+08:00  INFO 57274 --- [shopping-mall] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-25T20:32:12.559+08:00  INFO 57274 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-25T20:32:12.754+08:00  INFO 57274 --- [shopping-mall] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@adafe19
+2024-09-25T20:32:12.755+08:00  INFO 57274 --- [shopping-mall] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-25T20:32:12.957+08:00  INFO 57274 --- [shopping-mall] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-25T20:32:12.960+08:00  INFO 57274 --- [shopping-mall] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-25T20:32:13.034+08:00  WARN 57274 --- [shopping-mall] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-25T20:32:13.227+08:00  INFO 57274 --- [shopping-mall] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-25T20:32:13.232+08:00  INFO 57274 --- [shopping-mall] [main] c.b.s.ShoppingMallApplication            : Started ShoppingMallApplication in 2.028 seconds (process running for 2.31)
+2024-09-25T20:32:22.244+08:00  INFO 57274 --- [shopping-mall] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-25T20:32:22.244+08:00  INFO 57274 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-25T20:32:22.247+08:00  INFO 57274 --- [shopping-mall] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
