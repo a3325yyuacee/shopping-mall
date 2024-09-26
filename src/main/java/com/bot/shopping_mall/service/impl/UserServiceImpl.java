@@ -1,6 +1,7 @@
 package com.bot.shopping_mall.service.impl;
 
 import com.bot.shopping_mall.dao.UserDao;
+import com.bot.shopping_mall.dto.UserLoginRequest;
 import com.bot.shopping_mall.dto.UserRegisterRequest;
 import com.bot.shopping_mall.model.User;
 import com.bot.shopping_mall.service.UserService;
@@ -36,5 +37,22 @@ public class UserServiceImpl implements UserService {
 
         //創建帳號
         return userDao.createUser(userRegisterRequest);
+    }
+
+    @Override
+    public User login(UserLoginRequest userLoginRequest) {
+        User user = userDao.getUserByEmail(userLoginRequest.getEmail());
+
+        if(user == null){
+            log.warn("該 Email {} 尚未註冊", userLoginRequest.getEmail());
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+        }
+
+        if ( user.getPassword().equals(userLoginRequest.getPassword())){
+            return user;
+        }else {
+            log.warn("Email {} 的密碼不正確", userLoginRequest.getEmail());
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
+        }
     }
 }
